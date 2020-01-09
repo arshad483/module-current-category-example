@@ -1,0 +1,13 @@
+<?php
+
+declare(strict_types=1);
+
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var VinaiKopp\CurrentCategoryExample\ViewModel\CurrentCategoryExampleViewModel $currentCategoryViewModel */
+$currentCategoryViewModel = $block->getData('current_category');
+
+?>
+<div>
+    <div><?= __('Current Category Id: %1', $currentCategoryViewModel->getCategoryId()) ?></div>
+    <div><?= __('Current Category Name: %1', $currentCategoryViewModel->getCategoryName()) ?></div>
+</div>

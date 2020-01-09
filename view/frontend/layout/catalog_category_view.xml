@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block name="current-category-example" template="VinaiKopp_CurrentCategoryExample::example.phtml">
+                <arguments>
+                    <argument name="current_category" xsi:type="object">VinaiKopp\CurrentCategoryExample\ViewModel\CurrentCategoryExampleViewModel</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
